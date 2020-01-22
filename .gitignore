@@ -1,0 +1,8 @@
+.vscode/
+.idea/
+.cache/
+.DS_Store
+
+__pycache__
+flask/virt/*
+!.gitkeep

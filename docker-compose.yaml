@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  flask:
+    build: ./flask
+    container_name: flask_main_container
+    image: flask_main
+    restart: always
+    expose:
+      - "8000"
+  nginx:
+    build: ./nginx
+    image: nginx_main
+    container_name: nginx_main_container
+    restart: always
+    ports:
+      - "8080:80"
+
+
